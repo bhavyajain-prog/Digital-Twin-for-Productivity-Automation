@@ -1,0 +1,47 @@
+/* Apply styles to both popup and settings containers */
+.popup-container, .settings-container {
+  width: 500px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9; /* Light grey background for better contrast */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Centering the containers within the viewport */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove default margin */
+  background-color: #eaeaea; /* Slightly darker background for contrast */
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Input and textarea styling */
+textarea, input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}

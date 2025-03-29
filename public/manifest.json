@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "AI Email Productivity",
+    "version": "1.0",
+    "description": "Enhance email writing with AI-powered summarization and replies.",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": ["storage", "activeTab"],
+    "host_permissions": ["https://mail.google.com/mail/u/0/#inbox"]
+  }
+  
