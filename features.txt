@@ -1,2 +1,76 @@
-add features:
-abhi tk shuru nhi kiya :-)
+### 🚀 **LNM InteliTwin - Development Roadmap**  
+
+---
+
+## **🔹 Phase 1: Core AI Email Assistant & Authentication**  
+🎯 **Goal:** Build a functional prototype that automates **email responses** while ensuring user control.  
+
+### ✅ **1. Basic Authentication Setup**  
+- Implement **Google OAuth** for login.  
+- Store user session details securely.  
+- Ensure **token-based authentication** for API requests.  
+
+### ✅ **2. Email Automation - Smart Replies & User Agreement**  
+- **Email Fetching:**  
+  - Use **Gmail API** to fetch emails with user consent.  
+  - Filter unread or important emails for response suggestions.  
+
+- **AI-Powered Drafts:**  
+  - Generate AI-based **email replies** using OpenAI API.  
+  - Provide options to **edit, approve, or discard** AI-generated replies.  
+
+- **User Agreement & Control:**  
+  - Ensure users explicitly allow AI-generated replies.  
+  - Give users control to **disable AI assistance** anytime.  
+
+### ✅ **3. Dashboard & AI Drafts (Might Be Tweaked)**  
+- Build a **React dashboard** to:  
+  - Display **emails & AI-generated drafts**.  
+  - Allow **manual editing** before sending responses.  
+  - Show a toggle for **AI assistance enable/disable**.  
+
+### ✅ **4. Database for Scraped Data**  
+- Store **scraped email metadata** (sender, subject, timestamp).  
+- Store AI-generated drafts with timestamps for **user review**.  
+- Use **Firebase (real-time)** or **PostgreSQL (structured storage)**.  
+
+### ✅ **5. Deployment & Testing**  
+- **Frontend:** Deploy on **Vercel**.  
+- **Backend:** Deploy on **Render/Railway**.  
+- **Testing:** Ensure API works with real Gmail accounts.  
+
+---
+
+## **🔹 Phase 2: Browsing Content Summarization (Next Stage)**  
+🎯 **Goal:** Enable AI to summarize **browsing content (news, articles, research papers, etc.)**.  
+
+### ✅ **1. Web Scraping & Content Extraction**  
+- Fetch content from **news articles, blogs, and research papers**.  
+- Use **BeautifulSoup/Selenium** (Python) or **Puppeteer (Node.js)** for scraping.  
+- Store extracted content in the **database** for processing.  
+
+### ✅ **2. AI-Powered Summarization**  
+- Implement **OpenAI API or BERT-based extractive summarization**.  
+- Generate **concise summaries** of fetched content.  
+- Categorize content by **topics of interest**.  
+
+### ✅ **3. UI for Summarized Content**  
+- Create a **“My Summaries”** section in the dashboard.  
+- Display summarized content with a **read more option**.  
+- Allow **feedback on AI summaries** (helpful/not helpful).  
+
+### ✅ **4. Optimizations & Privacy Controls**  
+- Ensure **user data is not stored unnecessarily**.  
+- Add **toggle for users to disable summarization tracking**.  
+
+---
+
+## **⏳ Future Enhancements (Beyond Hackathon)**  
+🚀 **Multi-Platform Support** (WhatsApp, Slack, Discord integration).  
+⚡ **Personalized AI Learning** (Adaptive replies & summaries).  
+🔥 **Browser Extension** for real-time AI suggestions.  
+
+---
+
+This roadmap ensures **rapid development** while keeping features practical.  
+Want me to create **boilerplate code for Phase 1** to speed things up? 🚀
