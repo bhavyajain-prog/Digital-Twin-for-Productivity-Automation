@@ -1,1 +1,40 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Firebase related files
+.firebase/
+firebase-debug.log
+firestore.indexes.json
+firestore.rules
+
+# Service account credentials (Keep it secure!)
+serviceAccountKey.json
+
+# VSCode settings
 .vscode/
+
+# Logs
+*.log
+logs/
+debug.log
+error.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Ignore any compiled output
+dist/
+out/
+build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+.idea/
