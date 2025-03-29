@@ -1,7 +1,10 @@
 const admin = require("firebase-admin");
-const {initializeApp} = require("firebase/app");
-const { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } = require("firebase/auth");
-
+const { initializeApp } = require("firebase/app");
+const {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} = require("firebase/auth");
 
 const serviceAccount = require("./serviceAccountKey.json");
 
@@ -11,7 +14,7 @@ admin.initializeApp({
 });
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAVcWQYmAejvYqi8dn75BMRCGLqE4uiSHA",
+  apiKey: process.env.FIREBASE_API,
   authDomain: "lnm-intellitwin.firebaseapp.com",
   projectId: "lnm-intellitwin",
   storageBucket: "lnm-intellitwin.firebasestorage.app",
@@ -25,4 +28,10 @@ const auth = getAuth(firebaseApp); // This is the correct way to get Auth in new
 // Export modules
 const db = admin.firestore();
 
-module.exports = { admin, db, auth, createUserWithEmailAndPassword, signInWithEmailAndPassword };
+module.exports = {
+  admin,
+  db,
+  auth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+};
