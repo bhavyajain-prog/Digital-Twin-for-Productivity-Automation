@@ -6,10 +6,10 @@ import pandas as pd
 
 
 
-from src.inference.digital_twin import DigitalTwin
-from src.data_collection.browsing_collector import save_browsing_data
-from src.data_collection.email_collector import save_email_data
-from src.preprocessing.browsing_preprocessor import load_browsing_data
+from digital_twin_project.src.inference.digital_twin import DigitalTwin
+from digital_twin_project.src.data_collection.browsing_collector import save_browsing_data
+from digital_twin_project.src.data_collection.email_collector import save_email_data
+from digital_twin_project.src.preprocessing.browsing_preprocessor import load_browsing_data
 
 app = Flask(__name__)
 twin = DigitalTwin()

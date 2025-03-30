@@ -7,12 +7,12 @@ import pandas as pd
 # Add the project root to the path to access other modules
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.preprocessing.browsing_preprocessor import preprocess_browsing_data
-from src.feature_engineering.browsing_features import create_domain_frequency_features
-from src.model_training.interest_model import get_interest_profile
-from src.model_training.email_summarizer import summarize_email
-from src.model_training.reply_generator import generate_reply
-from src.model_training.email_classifier import classify_email
+from digital_twin_project.src.preprocessing.browsing_preprocessor import preprocess_browsing_data
+from digital_twin_project.src.feature_engineering.browsing_features import create_domain_frequency_features
+from digital_twin_project.src.model_training.interest_model import get_interest_profile
+from digital_twin_project.src.model_training.email_summarizer import summarize_email
+from digital_twin_project.src.model_training.reply_generator import generate_reply
+from digital_twin_project.src.model_training.email_classifier import classify_email
 
 class DigitalTwin:
     def __init__(self):
