@@ -40,3 +40,4 @@ Thumbs.db
 .idea/
 
 package-lock.json
+backend/package-lock.json
