@@ -4,14 +4,13 @@ const {
   signInWithEmailAndPassword,
 } = require("../config/firebase");
 
-const { admin } = require("../config/firebase"); // Import Firebase Admin SDK
+const { admin } = require("../config/firebase");
 
 const signup = async (req, res) => {
   const { name, email, password } = req.body;
 
   try {
-    // Create user in Firebase Auth
-    const userCredential = await createUserWithEmailAndPassword(
+      const userCredential = await createUserWithEmailAndPassword(
       auth,
       email,
       password
@@ -34,16 +33,12 @@ const login = async (req, res) => {
     if (!email || !password) {
       return res.status(400).json({ message: "Email and password required." });
     }
-
-    // Sign in user
     const userCredential = await signInWithEmailAndPassword(
       auth,
       email,
       password
     );
     const user = userCredential.user;
-
-    // Generate token using Firebase Admin SDK
     const token = await admin.auth().createCustomToken(user.uid);
 
     res.status(200).json({ message: "Login successful", token });
@@ -59,7 +54,6 @@ const verifyToken = async (req, res) => {
       return res.status(400).json({ message: "Token required" });
     }
 
-    // Verify Firebase ID Token using Admin SDK
     const decodedToken = await admin.auth().verifyIdToken(token);
     res
       .status(200)
